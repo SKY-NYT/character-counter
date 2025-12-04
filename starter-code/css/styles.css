@@ -138,5 +138,8 @@ section {
     .seccard {
         grid-template-columns: 1fr; 
     }
+    .label{
+        font-size: 0.7rem;
+    }
 }
 
