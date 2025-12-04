@@ -1,0 +1,142 @@
+/*  Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    min-height: 100vh;
+    font-family: 'DM Sans', sans-serif;
+    padding:0 5rem;   
+}
+
+/*  Section  */
+section {
+    margin: 1.5rem;
+}
+
+.seccard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem; 
+    margin-top: 5%;
+}
+
+
+/*  Logo Section */
+.logo {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem;
+}
+
+
+/*  Heading */
+.heading {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+/*  Textarea */
+.writeband textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: none;
+    outline: none;
+    background-color: #f1f0f6;
+    font-family: sans-serif;
+}
+
+/*  Checkband */
+.checkband {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    flex-wrap: wrap; 
+}
+
+/* Cards */
+.card {
+    background-color: orange;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 25vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s;
+}
+
+/*  Card colors using variables for theme  */
+.card1 { background-color: #D3A1FA; }
+.card2 { background-color: #FF9F00; }
+.card3 { background-color: #FF8159; }
+
+.number {
+    font-size: 4.5rem;
+    line-height: 1;
+}
+
+.label {
+    font-size: 1.1rem;
+}
+
+/*  Card images */
+.themes {
+    width: 60%;
+    position: relative;
+    right: -14%; 
+    opacity: 0.35; 
+}
+
+/*  Letter density */
+.characters {
+    font-size: 1.2rem;
+}
+
+/*  RESPONSIVE UPDATES */
+@media (max-width: 900px) {
+    .heading {
+        font-size: 2rem;
+    }
+    .number {
+        font-size: 3rem;
+    }
+    .themes {
+        width: 50%;
+        right: -10%;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0 1rem;
+    }
+    .heading {
+        font-size: 1.5rem;
+    }
+    .number {
+        font-size: 2rem;
+    }
+    .checkband {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .seccard {
+        grid-template-columns: 1fr; 
+    }
+}
+

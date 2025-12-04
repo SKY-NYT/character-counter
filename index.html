@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Character counter</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+<section class="logo">
+  <div class="moon"> <img src="./assets/images/icon-moon.svg" alt="m"/></div>
+</section>
+
+<section>
+  <div><h1 class="heading">Analyze your text <br> in real-time.</h1>
+</section>
+<section>
+  <div class="writeband">
+    <textarea id="text-input" placeholder="Type or paste your text here..." ></textarea>
+  </div>
+  <div class="checkband">
+  <div>
+    <input type="checkbox" id="exclude-spaces">
+    <label for="exclude-spaces">Exclude Spaces</label>
+    <input type="checkbox" id="set-character-limit">
+    <label for="set-character-limit">Set Character Limit</label>
+  </div>
+  <div >Approx. reading time: 1 minutes</div>
+</div>
+</section>
+<section class="seccard">
+
+  <div class="card card1">
+    <div>
+      <span class="number">278</span>
+      <span class="label">Total Characters</span>
+    </div>
+    <img class="themes " src="./assets/images/pattern-character-count.svg" alt="pattern-character-count"/>
+  </div>
+  
+
+  <div class="card card2">
+    <div>
+      <span class="number">39</span>
+      <span class="label"><br>Word Count</span>
+    </div>
+     <img class="themes " src="./assets/images/pattern-word-count.svg" alt="pattern-character-count"/>
+  </div>
+ 
+
+  <div class="card card3">
+    <div >
+      <span class="number">04</span>
+      <span class="label">Sentence Count</span>
+    </div>
+    <img class="themes " src="./assets/images/pattern-sentence-count.svg"alt="pattern-character-count"/>
+  </div>
+
+</section>
+
+<section>
+  <div>Letter Density</div>
+  <div id="letter-density-results">No characters found. Start typing to see letter density.</div>
+</section>
+ 
+</body>
+</html>
